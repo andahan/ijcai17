@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-'天级-城市天气-温度-风级'
+"""
+【天级城市天气】日期-天气-温度-风向-城市拼音
+input file:CITY_LIST.csv
+output file: ./weather_houbao_d_data/城市拼音houbao_d.csv ————> weather_houbao_d_full.csv
+output:['date', 'tq', 'temp', 'wind','CITY_EN]
+2016年01月17日,阴/雾,9℃/3℃,东北风≤3级/东北风≤3级,fuzhou
+"""
 
 __author__ = 'anhan'
 
@@ -64,7 +70,12 @@ def get_data(url):
 if __name__ == '__main__':
 
     CITY_NAME = pd.read_csv('CITY_LIST.csv')
-    city_pinyin = CITY_NAME['CITY_EN']
+
+    # city_pinyin = CITY_NAME['CITY_EN']
+    # 补充采集
+    # city_pinyin = ['hangzhou','dongguang','haerbin','taizhou','bangbu','liuan','lvyang']
+    city_pinyin = ['jstaizhou']
+
 
     for city in city_pinyin:
         data_ = list()

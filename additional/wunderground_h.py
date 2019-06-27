@@ -59,9 +59,9 @@ for ind, value in PORT_NAME.iterrows():
                 print(theDate2)
                 theport = value['AIRPORT_CODE']
 
-                # theurl = "http://www.wunderground.com/history/wmo/" + theport + "/" + theDate + "/DailyHistory.html?MR=1"
+                theurl = "http://www.wunderground.com/history/wmo/" + theport + "/" + theDate + "/DailyHistory.html?MR=1"
 
-                theurl = "http://www.wunderground.com/history/wmo/ZLXY/2015/05/01/DailyHistory.html?MR=1"
+                # theurl = "http://www.wunderground.com/history/wmo/ZLXY/2015/05/01/DailyHistory.html?MR=1"
 
                 # print(theurl)
 
